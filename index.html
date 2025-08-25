@@ -286,9 +286,10 @@
 
         .hero-image {
             position: absolute;
-            right: -50px;
+            right: -10px;
+            top: 23%;
             bottom: 0;
-            width: 40%;
+            width: 30%;
             max-width: 800px;
             z-index: 1;
             filter: drop-shadow(0 0 25px rgba(0, 238, 255, 0.5));
@@ -547,12 +548,18 @@
         .btn:hover .interactive-highlight {
             opacity: 0.6;
         }
-
-        /* Responsive Design */
+        /* Ipad Pro */
+        @media (max-width: 1400px) {
+            .hero-image {
+              top: 35%;
+              left: 70%;
+              max-width: 390px;
+            }
+          }
+        /* Mini Ipad */
         @media (max-width: 992px) {
             .hero-image {
-                opacity: 0.3;
-                right: -100px;
+              display: none;
             }
             
             .hero-content {
@@ -562,6 +569,7 @@
             .news-container {
                 flex-direction: column;
             }
+            
         }
 
         @media (max-width: 768px) {
